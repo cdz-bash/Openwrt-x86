@@ -1,5 +1,5 @@
 # 主要x86和x86-mini设备编译
-插件有与下添加pyton3
+插件有与下添加python3
 
 ## 近期更新 [![](https://img.shields.io/badge/-近期固件更新-FFFFFF.svg)](#近期更新-)
 🤣努力修复中……
