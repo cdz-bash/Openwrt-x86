@@ -1,5 +1,5 @@
 # 主要x86和x86-mini设备编译
-插件有与下添加python3
+插件有与Openwrt-all-x86相比下添加python3
 ## 固件下载 [![](https://img.shields.io/badge/-编译状态及下载链接-FFFFFF.svg)](#固件下载-)
 点击下表中 [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?style=flat&logo=hack-the-box)](https://github.com/haiibo/OpenWrt/releases) 即可跳转到该设备固件下载页面
 | 平台+设备名称 | 固件编译状态 | 配置文件 | 固件下载 |
