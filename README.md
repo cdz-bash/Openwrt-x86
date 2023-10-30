@@ -1,5 +1,16 @@
 # 主要x86和x86-mini设备编译
-插件有与Openwrt-all-x86相比下添加python3,生成文件名添加日期测试
+插件有与Openwrt-all-x86相比下添加python3,生成文件名添加日期测试,
+1030添加socat，usb打印，docker，内容过滤
+luci-app-cjdns  #加密IPV6网络相关
+luci-app-docker
+luci-app-dockerman
+luci-app-e2guardian   #Web内容过滤器
+luci-app-p910nd
+luci-app-socat
+
+
+CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_PACKAGE_docker-compose=y
 ## 固件下载 [![](https://img.shields.io/badge/-编译状态及下载链接-FFFFFF.svg)](#固件下载-)
 点击下表中 [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?style=flat&logo=hack-the-box)](https://github.com/haiibo/OpenWrt/releases) 即可跳转到该设备固件下载页面
 | 平台+设备名称 | 固件编译状态 | 配置文件 | 固件下载 |
