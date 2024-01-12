@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#添加chatgpt插件
+git clone https://github.com/sirpdboy/chatgpt-web.git package/luci-app-chatgpt
+
+#添加partexp插件
+git clone https://github.com/sirpdboy/luci-app-partexp.git package/luci-app-partexp
+
 # 修改默认IP
 # sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
@@ -32,6 +38,13 @@ git clone --depth=1 https://github.com/vernesong/OpenClash/luci-app-openclash pa
 svn export https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2 package/luci-app-passwall2
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+
+# 替换passwall的源码(默认luci分支)
+export PassWall_luci_branch="0"              # passwall的源码分别有【luci分支】和【luci-smartdns-new-version分支】(填0为使用luci分支,填1为使用luci-smartdns-new-version分支)
+
+# 替换OpenClash的源码(默认master分支)
+export OpenClash_branch="0"                  # OpenClash的源码分别有【master分支】和【dev分支】(填0为使用master分支,填1为使用dev分支)
+export OpenClash_Core="1"                    # 增加OpenClash时,把核心下载好,(填1为下载【dev单核】,填2为下载【dev/meta/premium三核】,填0为不需要核心)
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
